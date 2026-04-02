@@ -1,4 +1,4 @@
-#include "Medicine.h"
+#include "Pharmacy.h"
 
 int main() {
    /* Medicine a("Analgin", "Pills", 55);
@@ -23,7 +23,15 @@ int main() {
     c.showInfo();*/
 
 
+    Pharmacy pharm("911");
 
+    Medicine a("Analgin", "Pills", 55);
+    pharm.addMedicine(a);
+    pharm.addMedicine(Medicine("Nurofen", "Pills", 120));
+    pharm.addMedicine(Medicine("Dr MOM", "Syrop", 90));
+
+
+    pharm.sortByPrice(); //+ show
 
     return 0;
 }
