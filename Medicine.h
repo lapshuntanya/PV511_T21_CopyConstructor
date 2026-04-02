@@ -18,6 +18,7 @@ private:
 public:
     Medicine();
     Medicine(const char* title, const char* type, float price);
+    Medicine(const Medicine& obj); //obj - звідки копіюємо
     ~Medicine();
 
     const char* getTitle()const;
