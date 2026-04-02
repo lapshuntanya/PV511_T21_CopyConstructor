@@ -13,6 +13,14 @@ int main() {
 
     a.showInfo();//"Analgin", "Pills", 55
     b.showInfo();//"Analgin Forte", "Pills", 55
+    cout << "-----------------------------\n";
+
+    Medicine c; //"Undefined", "Undefined", 0
+    //...
+    c = a; //Оператор присвоювання
+
+    c.setTitle("Nurofen");
+    c.showInfo();
 
     return 0;
 }

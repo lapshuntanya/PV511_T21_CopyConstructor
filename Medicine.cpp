@@ -46,6 +46,25 @@ Medicine::Medicine(const Medicine &obj) {
     this->price = obj.price;
 }
 
+Medicine & Medicine::operator=(const Medicine &obj) {
+    delete[] this->title;
+    delete[] this->type;
+
+    int len_title = strlen(obj.title) + 1;
+    this->title = new char[len_title];
+    strcpy(this->title,obj.title ); //Clion
+    //strcpy_s(this->title,len_title, obj.title ); //VS
+
+    int len_type = strlen(obj.type) + 1;
+    this->type = new char[len_type];
+    strcpy(this->type, obj.type ); //Clion
+    //strcpy_s(this->type,len_type, obj.type ); //VS
+
+    this->price = obj.price;
+
+    return *this; //Повертаємо оновленний обʼєкт
+}
+
 Medicine::~Medicine() {
     delete[] title; title = nullptr;
     delete[] type; type = nullptr;
