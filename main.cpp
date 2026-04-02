@@ -1,7 +1,7 @@
 #include "Medicine.h"
 
 int main() {
-    Medicine a("Analgin", "Pills", 55);
+   /* Medicine a("Analgin", "Pills", 55);
     a.showInfo();
 
     cout << "-----------------------------\n";
@@ -20,7 +20,10 @@ int main() {
     c = a; //Оператор присвоювання
 
     c.setTitle("Nurofen");
-    c.showInfo();
+    c.showInfo();*/
+
+
+
 
     return 0;
 }
