@@ -10,6 +10,7 @@
 using namespace std;
 
 class Medicine {
+private:
     char* title;
     char* type;
     float price;
